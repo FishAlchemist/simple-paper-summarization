@@ -20,6 +20,6 @@ cd src/paper_paper_summary
 
 ## pre-commit
 
-``powershell
+```powershell
 uv run pre-commit install
-``
+```
