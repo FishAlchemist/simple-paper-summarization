@@ -9,8 +9,8 @@ if not __package__:
     sys.path.insert(0, package_source_path)
 
 
-from src import paper_crawler  # noqa: F401
-from src import paper_summary  # noqa: F401
+from src import paper_crawler  # noqa: F401, RUF100
+from src import paper_summary  # noqa: F401, RUF100
 
 
 def main():
