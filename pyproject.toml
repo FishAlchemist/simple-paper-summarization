@@ -11,6 +11,7 @@ dev = ["pre-commit>=4.0.1", "pytest>=8.3.3"]
 [tool.ruff]
 line-length = 88
 target-version = "py311"
+exclude = ["RAGforpaper.py"]
 
 [tool.ruff.lint]
 select = [
