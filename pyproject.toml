@@ -2,11 +2,18 @@
 name = "simple-paper-summarization"
 version = "0.1.0"
 description = "Add your description here"
-requires-python = ">=3.11"
-dependencies = []
+requires-python = ">=3.11,<3.13"
+dependencies = ["paper_crawler", "paper_summary"]
 
 [dependency-groups]
 dev = ["pre-commit>=4.0.1", "pytest>=8.3.3"]
+
+[tool.uv.sources]
+paper_summary = { workspace = true }
+paper_crawler = { workspace = true }
+
+[tool.uv.workspace]
+members = ["src/paper_summary", "src/paper_crawler"]
 
 [tool.ruff]
 line-length = 88
