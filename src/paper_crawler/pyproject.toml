@@ -3,7 +3,10 @@ name = "paper_crawler"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.11,<3.13"
-dependencies = ["playwright>=1.49.0"]
+dependencies = [
+    "loguru>=0.7.3",
+    "playwright>=1.49.0",
+]
 
 [dependency-groups]
 dev = ["pytest-playwright>=0.6.2", "pre-commit>=4.0.1", "pytest>=8.3.3"]
