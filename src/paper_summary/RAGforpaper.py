@@ -4,7 +4,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain_community.llms import Ollama
 from langchain_chroma import Chroma
-from langchain_core.output_parsers import StrOutputParser 
+from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.prompts import ChatPromptTemplate
 
@@ -58,6 +58,3 @@ def RAGModel(question:str, retriever):
 que = input("輸入想要查詢的關鍵字：")
 ret = retrieve(paper_sorting="paper_sorting.txt")
 Answer = RAGModel(question=que, retriever=ret)
-
-
-
